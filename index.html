@@ -1,68 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <meta charset="UTF-8">
     <title>Graphene by marcomag89</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Graphene</h1>
+      <h2 class="project-tagline">A framework for build action oriented REST web services.</h2>
+      <a href="https://github.com/marcomag89/Graphene" class="btn">View on GitHub</a>
+      <a href="https://github.com/marcomag89/Graphene/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/marcomag89/Graphene/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <header>
-      <div class="container">
-        <h1>Graphene</h1>
-        <h2>A framework for build action oriented REST web services.</h2>
+    <section class="main-content">
+      <h1>
+<a id="graphene-alpha" class="anchor" href="#graphene-alpha" aria-hidden="true"><span class="octicon octicon-link"></span></a>Graphene (alpha)</h1>
 
-        <section id="downloads">
-          <a href="https://github.com/marcomag89/Graphene/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/marcomag89/Graphene/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/marcomag89/Graphene" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+<p>This framework allows you to create Action Oriented REST services with less lines of code, like this:</p>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="graphene-alpha" class="anchor" href="#graphene-alpha"><span class="octicon octicon-link"></span></a>Graphene (alpha)</h1>
-
-<p>This framework allows you to create Action Oriented REST services with more less lines of code, like this:</p>
-
-<div class="highlight highlight-PHP"><pre><span class="k">class</span> <span class="nc">HelloWorld</span> <span class="k">extends</span> <span class="nx">Action</span><span class="p">{</span>
-    <span class="k">public</span> <span class="k">function</span> <span class="nf">run</span> <span class="p">()</span>
-    <span class="p">{</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendMessage</span><span class="p">(</span><span class="s1">'Hello world'</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
+<div class="highlight highlight-PHP"><pre><span class="pl-s1"><span class="pl-k">class</span> <span class="pl-en">HelloWorld</span> <span class="pl-k">extends</span> <span class="pl-e">Action</span>{</span>
+<span class="pl-s1">    <span class="pl-k">public</span> <span class="pl-k">function</span> <span class="pl-en">run</span> ()</span>
+<span class="pl-s1">    {</span>
+<span class="pl-s1">        <span class="pl-smi">$this</span><span class="pl-k">-&gt;</span>sendMessage(<span class="pl-s"><span class="pl-pds">'</span>Hello world<span class="pl-pds">'</span></span>);</span>
+<span class="pl-s1">    }</span>
+<span class="pl-s1">}</span></pre></div>
 
 <h2>
-<a name="creating-graphene-project" class="anchor" href="#creating-graphene-project"><span class="octicon octicon-link"></span></a>Creating Graphene project</h2>
+<a id="install-graphene-in-4-steps" class="anchor" href="#install-graphene-in-4-steps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install Graphene in 4 steps</h2>
 
 <ol>
-<li>Download Graphene as ZIP file and extract content into your project root.</li>
-<li>If you running apache server, change filename of <code>htaccess.txt</code> to <code>.htaccess</code> it will enable apache url rewriting module.</li>
-<li>Edit configuration file.</li>
-<li>Check if you are ready to go on <code>yourProject.address/_system/status</code> on your browser.</li>
-<li>Enjoy creating your first module!</li>
-</ol><h2>
-<a name="wiki" class="anchor" href="#wiki"><span class="octicon octicon-link"></span></a>Wiki</h2>
+<li>
+<a href="https://github.com/marcomag89/Graphene/archive/aluminium-v0.1.1.zip">Download Graphene</a> as ZIP file and extract content into your project root.</li>
+<li>Create <a href="https://github.com/marcomag89/Graphene/wiki/settings.json">settings.json</a> file.</li>
+<li>Check if you are <a href="https://github.com/marcomag89/Graphene/wiki#ready-to-go">ready to go</a> on <code>&lt;yourProject.com&gt;/system/status</code> on your browser.</li>
+<li>Enjoy creating your <a href="https://github.com/marcomag89/Graphene/wiki/Hello-World-tutorial">first module</a>!</li>
+</ol>
+
+<h2>
+<a id="wiki" class="anchor" href="#wiki" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wiki</h2>
 
 <p>we are very excited that you want to use Graphene therefore we are working so that you can use it to its full potential by writing up to date wiki.
-<a href="https://github.com/marcomag89/Graphene/wiki">https://github.com/marcomag89/Graphene/wiki</a></p>
+<a href="https://github.com/marcomag89/Graphene/wiki">Go to Graphene wiki</a></p>
 
 <h3>
-<a name="howto" class="anchor" href="#howto"><span class="octicon octicon-link"></span></a>HowTo</h3>
+<a id="howto" class="anchor" href="#howto" aria-hidden="true"><span class="octicon octicon-link"></span></a>HowTo</h3>
 
-<p><strong>Hello world</strong> <a href="https://github.com/marcomag89/Graphene/wiki/Hello-World-tutorial">https://github.com/marcomag89/Graphene/wiki/Hello-World-tutorial</a></p>
-      </section>
-    </div>
+<p><strong>Hello world</strong> <a href="https://github.com/marcomag89/Graphene/wiki/Hello-World-tutorial">tutorial</a></p>
 
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/marcomag89/Graphene">Graphene</a> is maintained by <a href="https://github.com/marcomag89">marcomag89</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
+
